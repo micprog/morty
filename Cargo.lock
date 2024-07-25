@@ -480,6 +480,7 @@ dependencies = [
  "serde_json",
  "simple_logger",
  "sv-parser",
+ "tempfile",
  "term",
  "time",
 ]
