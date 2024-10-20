@@ -310,14 +310,14 @@ impl<'a> Renderer<'a> {
     fn render_headline_doc(&mut self, doc: &str, out: &mut impl Write) -> Result<()> {
         let slice = doc.lines().next().unwrap_or("");
         let parser = pulldown_cmark::Parser::new_ext(slice, pulldown_cmark::Options::all());
-        pulldown_cmark::html::write_html(out, parser)?;
+        pulldown_cmark::html::write_html_io(out, parser)?;
         Ok(())
     }
 
     /// Render markdown documentation.
     fn render_doc(&mut self, doc: &str, out: &mut impl Write) -> Result<()> {
         let parser = pulldown_cmark::Parser::new_ext(doc, pulldown_cmark::Options::all());
-        pulldown_cmark::html::write_html(out, parser)?;
+        pulldown_cmark::html::write_html_io(out, parser)?;
         Ok(())
     }
 

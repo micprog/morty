@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+## 0.9.1 - 2024-10-20
+### Fixed
+- Update `sv_parser` to `0.13`
+- Replace `chrono` dependency with `time`
+- Fix out-of-bounds error on `new_replace_table`
+- Update `predicates` to `3`
+- Update `term` to `1.0`
+- Update `simple_logger` to `5`
+- Update `pulldown-cmark` to `0.12`
+
 ## 0.9.0 - 2022-02-15
 ### Added
 - Add switch to disable parallel file parsing (can help with STACKOVERFLOW)
